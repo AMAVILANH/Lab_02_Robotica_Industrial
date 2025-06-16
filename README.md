@@ -78,16 +78,9 @@
 - Control correcto de las señales digitales.
 
 <p align="center">
-  <img src="./imagenes/pastel1.jpg" width="400"/>
-  <img src="./imagenes/pastel2.jpg" width="400"/>
+  <img src="./Imagenes/pastel1.jpg" width="400"/>
+  <img src="./Imagenes/pastel2.jpg" width="400"/>
 </p>
-
----
-
-## 👥 Integrantes del equipo
-
-- Nombre 1 – [GitHub](https://github.com/usuario1)
-- Nombre 2 – [GitHub](https://github.com/usuario2)
 
 ---
 
