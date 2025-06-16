@@ -95,27 +95,27 @@
 
 ```mermaid
 flowchart TD
-    A[Inicio del proyecto] --> B[Diseño de trayectoria en RobotStudio]
-    B --> C[Creación y asignación de WorkObject (WObj)]
-    C --> D[Diseño e importación de herramienta (Tool)]
-    D --> E[Calibración del TCP (Tool Center Point)]
-    E --> F[Simulación de movimientos en RobotStudio]
+    A(Inicio del proyecto) --> B(Diseño de trayectoria en RobotStudio)
+    B --> C(Creación y asignación de WorkObject)
+    C --> D(Diseño e importación de herramienta)
+    D --> E(Calibración del TCP)
+    E --> F(Simulación de movimientos en RobotStudio)
     F --> G{¿Trayectoria válida?}
     G -- No --> B
-    G -- Sí --> H[Exportar código RAPID]
+    G -- Sí --> H(Exportar código RAPID)
 
-    H --> I[Transferencia al controlador IRC5]
-    I --> J[Configuración de Entradas/Salidas Digitales]
-    J --> K[Inicio desde FlexPendant]
+    H --> I(Transferencia al controlador IRC5)
+    I --> J(Configurar Entradas/Salidas Digitales)
+    J --> K(Inicio desde FlexPendant)
 
-    K --> L[Controlador ejecuta rutina RAPID]
-    L --> M[Control de movimiento del IRB 140]
-    M --> N[Cálculo de cinemática inversa y control de motores]
-    N --> O[Ejecutar trayectoria decorativa]
-    O --> P{¿Señal digital activa?}
+    K --> L(IRC5 ejecuta rutina RAPID)
+    L --> M(Control de movimiento del IRB 140)
+    M --> N(Cálculo de cinemática inversa y control motores)
+    N --> O(Ejecutar trayectoria decorativa)
+    O --> P{¿Entrada digital activa?}
 
-    P -- Entrada 1 --> Q[Iniciar decoración y encender luz]
-    P -- Entrada 2 --> R[Ir a posición de mantenimiento y apagar luz]
-    Q --> S[Finaliza rutina → Retorna a HOME]
+    P -- Entrada 1 --> Q(Decoración y encender luz)
+    P -- Entrada 2 --> R(Posición de mantenimiento y apagar luz)
+    Q --> S(Finaliza rutina → Retorna a HOME → Activa banda)
     R --> S
-    S --> T[Fin del proceso / Esperar nueva señal]
+    S --> T(Fin del proceso / Esperar nueva señal)
