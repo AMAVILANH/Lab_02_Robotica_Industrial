@@ -109,6 +109,6 @@ flowchart TD
 
     P -- Entrada 1 --> Q(Decoración y encender luz)
     P -- Entrada 2 --> R(Posición de mantenimiento y apagar luz)
-    Q --> S(Finaliza rutina → Retorna a HOME → Activa banda)
+    Q --> S(Finaliza rutina → Retorna a HOME)
     R --> S
     S --> T(Fin del proceso / Esperar nueva señal)
