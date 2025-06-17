@@ -49,7 +49,7 @@
    - Se ejecutó en el robot ABB IRB 140, decorando físicamente la superficie de un tablero.
 
 <p align="center">
-  <img src="./Imagenes/robot_studio_1.jpeg" width="200"/>
+  <img src="./Imagenes/robot_studio_1.jpeg" width="400"/>
 </p>
 
 ---
