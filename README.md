@@ -80,11 +80,12 @@ Para que el robot pueda interpretar correctamente la posición y orientación de
 ---
 
 ## 📹 Video del proyecto
-
+<p align="center">
 📺 [Ver video en YouTube](https://www.youtube.com/watch?v=ocgjGX_sios)
 
 [![Video del proyecto](https://img.youtube.com/vi/ocgjGX_sios/0.jpg)](https://www.youtube.com/watch?v=ocgjGX_sios)
 ---
+</p>
 
 ## 📸 Resultados
 
