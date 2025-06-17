@@ -40,11 +40,10 @@
 2. **Generación de trayectoria personalizada**  
    - Se diseñó una trayectoria que escribe los nombres de los integrantes y una figura decorativa.
    - La trayectoria se realizó con `MoveL` para asegurar continuidad.
-   - Se definio la velocidad xxxx mm/s y el quaternio x para la ejecucion de la rutina.
+   - Se definio la velocidad 150 mm/s y precision de Z0 para hacerlo lo mas perfecto posible.
 
 3. **Trabajo con WorkObjects**  
-   - Se replicó la decoración en el cuadrante x `.
-
+   - Se replicó la decoración en el primer quaternion
 4. **Entradas y salidas digitales (I/O)**  
    - Dos entradas digitales: una para iniciar la rutina de decoración, otra para pose de mantenimiento.
    - Dos salidas digitales: una luz indicadora y el control de la banda transportadora.
@@ -58,14 +57,10 @@
 
 ## 🛠️ Calibración de la herramienta (Tool Center Point - TCP)
 
-Para que el robot pueda interpretar correctamente la posición y orientación de la herramienta que diseñamos (marcador tipo plumón), fue necesario calibrar su TCP (Tool Center Point). Esta calibración se realizó mediante el método de **toma de 4 puntos**, tanto en **RobotStudio** como en el **robot real IRB 140**.
-
-Este proceso nos permitió definir con precisión el sistema de coordenadas de la herramienta con respecto al flange del robot, condición fundamental para que las trayectorias escritas se correspondan con lo simulado.
-
-### ✳️ Procedimiento de calibración:
+Para que el robot pueda interpretar correctamente la posición y orientación de la herramienta que diseñamos (acople para marcador), fue necesario calibrar su TCP (Tool Center Point). Esta calibración se realizó mediante el método de **toma de 4 puntos**.
 
 1. **Fijamos la herramienta al flange del robot.**
-2. **Ubicamos la punta de la herramienta sobre un punto fijo desde diferentes orientaciones del brazo.**
+2. **Ubicamos la punta de la herramienta sobre un punto fijo desde 4 diferentes orientaciones del brazo.**
 3. **Registramos 4 posiciones de orientación distintas apuntando al mismo punto.**
 4. El sistema calculó automáticamente el offset del TCP respecto al flange.
 
@@ -88,7 +83,9 @@ Este proceso nos permitió definir con precisión el sistema de coordenadas de l
 
 ## 📹 Video del proyecto
 
-[▶️ Link YouTube]
+📺 [Ver video en YouTube](https://www.youtube.com/watch?v=ocgjGX_sios)
+
+[![Video del proyecto](https://img.youtube.com/vi/ocgjGX_sios/0.jpg)](https://www.youtube.com/watch?v=ocgjGX_sios)
 ---
 
 ## 📸 Resultados
