@@ -10,20 +10,19 @@
 ## 🎯 Objetivos
 
 - Comprender los tipos de movimientos (MOVJ y MOVL) en el entorno RAPID.
-- Diseñar y calibrar una herramienta (MTH) que simule una boquilla de decoración.
+- Diseñar y calibrar una herramienta que simule una boquilla de decoración.
 - Programar trayectorias personalizadas sobre superficies virtuales con el IRB 140.
 - Utilizar funciones básicas e intermedias del lenguaje RAPID.
 - Implementar control de entradas y salidas digitales.
-- Controlar el transporte automatizado del "pastel" mediante señal digital.
-
+- 
 ---
 
 ## 📦 Contenido del repositorio
 
 - `codigo_rapid/` – Código fuente del proyecto en RAPID.
-- `simulacion_robotstudio/` – Archivos de simulación de RobotStudio (.rsproj, .rslib).
-- `herramienta/` – Diseño CAD de la herramienta creada (formato `.sat` o `.stl`).
-- `imagenes/` – Fotografías de la herramienta física y del "pastel" decorado.
+- `simulacion_robotstudio/` – Video de la simulación en RobotStudio.
+- `herramienta/` – Diseño CAD de la herramienta creada.
+- `imagenes/` – Fotografías de la herramienta física, del "pastel" decorado y las trayectorias.
 - `video/` – Enlace al video del laboratorio, incluyendo simulación y ejecución real.
 - `documentacion/` – Diagramas de flujo, plano de planta y descripciones del trabajo.
 - `README.md` – Este documento.
@@ -43,13 +42,9 @@
    - Se definio la velocidad 150 mm/s y precision de Z0 para hacerlo lo mas perfecto posible.
 
 3. **Trabajo con WorkObjects**  
-   - Se replicó la decoración en el primer quaternion
-4. **Entradas y salidas digitales (I/O)**  
-   - Dos entradas digitales: una para iniciar la rutina de decoración, otra para pose de mantenimiento.
-   - Dos salidas digitales: una luz indicadora y el control de la banda transportadora.
-   - Configuración en RAPID con funciones como `SetDO`, `WaitDI`, `TPWrite`.
+   - Se acomodo la altura del tablero para la perfecta realizacion de la practica.
 
-5. **Simulación y ejecución real**  
+4. **Simulación y ejecución real**  
    - Se simuló el proceso en RobotStudio.
    - Se ejecutó en el robot ABB IRB 140, decorando físicamente la superficie de un tablero.
 
@@ -78,8 +73,8 @@ Para que el robot pueda interpretar correctamente la posición y orientación de
 ## 🤖 Funcionamiento general del sistema
 
 - El sistema inicia en posición **HOME**.
-- Al recibir la primera señal de entrada, inicia la rutina de decoración (trayectoria personalizada).
-- Al terminar, regresa a HOME y activa la banda transportadora para mover el pastel.
+- Al recibir la primera señal de entrada, inicia la rutina de decoración (nuestra trayectoria definida).
+- Al terminar, regresa a HOME.
 - Si se activa la segunda señal de entrada, se posiciona en modo mantenimiento para instalar o retirar la herramienta.
 
 ---
