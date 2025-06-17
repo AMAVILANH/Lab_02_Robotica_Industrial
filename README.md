@@ -53,6 +53,10 @@
    - Se simuló el proceso en RobotStudio.
    - Se ejecutó en el robot ABB IRB 140, decorando físicamente la superficie de un tablero.
 
+<p align="center">
+  <img src="./Imagenes/crobot_studio_1.jpeg" width="200"/>
+</p>
+
 ---
 
 ## 🛠️ Calibración de la herramienta (Tool Center Point - TCP)
@@ -66,7 +70,7 @@ Para que el robot pueda interpretar correctamente la posición y orientación de
 
 
 <p align="center">
-  <img src="./Imagenes/calibracion.jpeg" width="400"/>
+  <img src="./Imagenes/calibracion.jpeg" width="200"/>
 </p>
 
 ---
