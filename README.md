@@ -64,10 +64,9 @@ Para que el robot pueda interpretar correctamente la posición y orientación de
 3. **Registramos 4 posiciones de orientación distintas apuntando al mismo punto.**
 4. El sistema calculó automáticamente el offset del TCP respecto al flange.
 
-> La exactitud de la trayectoria final dependio directamente de la precisión de esta calibración.
 
 <p align="center">
-  <img src="./Imagenes/calibracion_tcp.jpg" width="400"/>
+  <img src="./Imagenes/calibracion.jpeg" width="400"/>
 </p>
 
 ---
