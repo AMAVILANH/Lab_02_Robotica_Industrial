@@ -56,6 +56,27 @@
 
 ---
 
+## 🛠️ Calibración de la herramienta (Tool Center Point - TCP)
+
+Para que el robot pueda interpretar correctamente la posición y orientación de la herramienta que diseñamos (marcador tipo plumón), fue necesario calibrar su TCP (Tool Center Point). Esta calibración se realizó mediante el método de **toma de 4 puntos**, tanto en **RobotStudio** como en el **robot real IRB 140**.
+
+Este proceso nos permitió definir con precisión el sistema de coordenadas de la herramienta con respecto al flange del robot, condición fundamental para que las trayectorias escritas se correspondan con lo simulado.
+
+### ✳️ Procedimiento de calibración:
+
+1. **Fijamos la herramienta al flange del robot.**
+2. **Ubicamos la punta de la herramienta sobre un punto fijo desde diferentes orientaciones del brazo.**
+3. **Registramos 4 posiciones de orientación distintas apuntando al mismo punto.**
+4. El sistema calculó automáticamente el offset del TCP respecto al flange.
+
+> La exactitud de la trayectoria final dependio directamente de la precisión de esta calibración.
+
+<p align="center">
+  <img src="./Imagenes/calibracion_tcp.jpg" width="400"/>
+</p>
+
+---
+
 ## 🤖 Funcionamiento general del sistema
 
 - El sistema inicia en posición **HOME**.
